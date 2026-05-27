@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Yandex SpeechKit workflow with Sapat in Daytona</title>
+  <desc id="desc">A diagram showing a short media clip moving through a Daytona workspace, Sapat, FFmpeg OggOpus conversion, Yandex SpeechKit, and a local transcript.</desc>
+  <rect width="1200" height="560" fill="#f8fafc"/>
+  <rect x="70" y="66" width="1060" height="428" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="3"/>
+  <text x="104" y="122" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#111827">Short-audio transcription in a reproducible workspace</text>
+  <text x="104" y="160" font-family="Arial, sans-serif" font-size="18" fill="#475569">Use Sapat inside Daytona, convert the temporary MP3 to OggOpus, and call Yandex SpeechKit without committing secrets.</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="105" y="236" width="170" height="104" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+    <text x="137" y="276" font-size="21" font-weight="700" fill="#0c4a6e">Short clip</text>
+    <text x="127" y="306" font-size="16" fill="#075985">MP4 or audio</text>
+
+    <path d="M292 288 H374" stroke="#334155" stroke-width="4" fill="none"/>
+    <path d="M374 288 L358 276 M374 288 L358 300" stroke="#334155" stroke-width="4" fill="none"/>
+
+    <rect x="394" y="210" width="250" height="156" rx="8" fill="#ecfdf5" stroke="#047857" stroke-width="2"/>
+    <text x="444" y="252" font-size="21" font-weight="700" fill="#065f46">Daytona workspace</text>
+    <text x="432" y="284" font-size="16" fill="#047857">Python venv, FFmpeg</text>
+    <text x="432" y="312" font-size="16" fill="#047857">sapat --api yandex</text>
+    <text x="432" y="340" font-size="16" fill="#047857">Secrets stay in .env</text>
+
+    <path d="M662 288 H744" stroke="#334155" stroke-width="4" fill="none"/>
+    <path d="M744 288 L728 276 M744 288 L728 300" stroke="#334155" stroke-width="4" fill="none"/>
+
+    <rect x="764" y="210" width="178" height="156" rx="8" fill="#fff7ed" stroke="#c2410c" stroke-width="2"/>
+    <text x="800" y="252" font-size="21" font-weight="700" fill="#7c2d12">SpeechKit</text>
+    <text x="794" y="284" font-size="16" fill="#9a3412">API v1 sync</text>
+    <text x="794" y="312" font-size="16" fill="#9a3412">OggOpus upload</text>
+    <text x="794" y="340" font-size="16" fill="#9a3412">JSON result</text>
+
+    <path d="M960 288 H1040" stroke="#334155" stroke-width="4" fill="none"/>
+    <path d="M1040 288 L1024 276 M1040 288 L1024 300" stroke="#334155" stroke-width="4" fill="none"/>
+
+    <rect x="968" y="386" width="126" height="56" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+    <text x="996" y="421" font-size="18" font-weight="700" fill="#312e81">.txt file</text>
+
+    <path d="M1030 366 V386" stroke="#334155" stroke-width="4" fill="none"/>
+    <path d="M1030 386 L1018 370 M1030 386 L1042 370" stroke="#334155" stroke-width="4" fill="none"/>
+
+    <rect x="104" y="404" width="488" height="46" rx="8" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+    <text x="128" y="434" font-size="17" fill="#854d0e">Sync recognition is for short, single-channel clips: validate with small samples first.</text>
+  </g>
+</svg>
